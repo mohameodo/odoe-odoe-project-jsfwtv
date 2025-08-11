@@ -1,0 +1,30 @@
+/* Custom global styles */
+body {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.font-serif {
+    font-family: 'Playfair Display', serif;
+}
+
+.shadow-text {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+/* Custom animation for card appearance */
+.card-enter {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.card-enter-active {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Tab styling */
+.tab-button.active {
+    @apply border-brown-700 text-brown-700;
+}
